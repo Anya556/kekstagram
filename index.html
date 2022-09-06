@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="nouislider/nouislider.css">
   <title>Кекстаграм</title>
 </head>
 
@@ -138,7 +139,7 @@
 
         <!-- Просмотр изображения -->
         <div class="big-picture__img">
-          <img src="img/logo-background-3.jpg" alt="Девушка в купальнике" width="600" height="600">
+          <img src="img/logo-background-3.jpg" alt="Девушка в купальнике" width="600" height="600" tabindex="0">
         </div>
 
         <!-- Информация об изображении. Подпись, комментарии, количество лайков -->
@@ -174,7 +175,7 @@
         </div>
 
         <!-- Кнопка для выхода из полноэкранного просмотра изображения -->
-        <button type="reset" class="big-picture__cancel  cancel" id="picture-cancel">Закрыть</button>
+        <button type="reset" class="big-picture__cancel  cancel" id="picture-cancel" tabindex="0">Закрыть</button>
       </div>
     </section>
   </main>
@@ -229,6 +230,8 @@
   <template id="messages">
     <div class="img-upload__message  img-upload__message--loading">Загружаем...</div>
   </template>
+  <script src = "nouislider/nouislider.js"></script>
   <script src = "/js/main.js" type = "module"></script>
+
 </body>
 </html>

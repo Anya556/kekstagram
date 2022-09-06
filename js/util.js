@@ -1,3 +1,8 @@
+const Keys = {
+  ESC: 'Esc',
+  ESCAPE: 'Escape',
+};
+
 //A clear random number
 let getRundomFunction = (min, max) => {
   if(min < 0 || max < min || max === min) {
@@ -18,4 +23,10 @@ const getRandomArrayElement = (elements) => {
   return elements[getRundomFunction(0, elements.length - 1)];
 };
 
-export { getRundomFunction, getMaxLength, getRandomArrayElement };
+
+//key Escape
+const isEscEvent = (evt) =>{
+  return evt.key === Keys.ESCAPE || evt.key === Keys.ESC;
+};
+
+export { getRundomFunction, getMaxLength, getRandomArrayElement, isEscEvent };

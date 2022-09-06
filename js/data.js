@@ -66,7 +66,7 @@ const Photo_Description = [];
 
 
 const createPhotos = () => {
-  for (let i = 0; i <= PHOTO_MAX; i++) {
+  for (let i = 0; i < PHOTO_MAX; i++) {
     Photo_Description.push({
       id: i,
       url: 'photos/'+ (i+1) + '.jpg',
